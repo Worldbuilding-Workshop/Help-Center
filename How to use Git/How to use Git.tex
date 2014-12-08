@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{How to use Git and GitHub}
+\title{J-F-B-M/Larethian}
+\date{\today}
+
+\newcommand{\git}{\textbf{GIT}}
+\newcommand{\github}{\textbf{GitHub}}
+
+\newcommand{\chatlink}{http://chat.stackexchange.com/rooms/17796/collaborative-shared-worlds}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+So you found our project and thought about the possibility to dive into it, but soon you noticed that there is this \git. In this paper, I want to introduce you to \git, showing you how and why to use it.
+
+\section{What is GIT?}
+
+\git is a distributed version control system. Don't worry, that simply means that multiple persons can work at the same documents either at the same or at different times without breaking everything for each other. To effectively collaborate in this project, you \textbf{HAVE} to install \git and get a \github -Account. You can do everything via \github's Web-interface, but doing so is tedious and unproductive.\\
+To install \git, visit the \href{http://git-scm.com/}{\git -Homepage}. There is also a good explanation about the \href{http://git-scm.com/book/en/v2/Getting-Started-Git-Basics}{Git Basics}.\\
+\git is organised in repositorys. One repository can not look into another\footnote{That is not true. But we limit our view to this to get you started in the wonderful world of \git.}. Think of it as different folders. You can clone, pull and push repositorys, but more on that later.
+
+\section{What is GitHub?}
+
+\github is a free hosting service for repositorys. It provides us with many tools that come quite in handy for our goals, so that's why we use it. And because it's free.
+
+\section{How to use GIT and GitHub?}
+
+First, you have to get a \github -Account. Once you have this, tell your name to us in \href{\chatlink}{our Chat}, and we will add you to our organization as soon as possible.\\
+Then you have to install \git . \git is in itself a program like every other program, but you can't use it directly. You either have to use another program which gives you a GUI, or use a command-line. As this document can't cover every possible GUI, I will just show you the command-line commands.
+
+\begin{description}
+	\item[\texttt{cd <PATH>}] This will change the current directory of your command-line. As your local repository will be created in the directory you are currently in with your command-line, you might change it with this command.
+	\item[\texttt{git clone <URL>}] You do this \textbf{once} at the start. This command will copy the repository from the server to your local computer\footnote{If you add your username in the URL, you don't have to enter it everytime you push. Example: \texttt{git clone https://J-F-B-M@<URL without https://>}}. 
+	\item[\texttt{git pull}] This will pull all changes on the server to your computer. If you haven't done anything in your copy, the server and you will have the same data after this command. The \texttt{clone}-command does something similar to \texttt{pull}, but also some additional work.
+	\item[\texttt{git add <FILE>}] With this command, you can add new files to the supervision of \git or tell git that you want to commit changes to existing files. Normally, when you create a new file, \git will ignore it. You have to tell \git that you want to track this file. To simply add everything, you can type \texttt{git add -A}.
+	\item[\texttt{git commit}] With this command, you can create a complete message containing all your (added) changes. A command-line-texteditor will open and you have to enter a message, which should summarize your changes. With \texttt{git clone -a} you can automatically add all changes to already known files to your commit, but you can't add new files. With \texttt{git clone -m "Some text"} you can directly add a message to your commit, skipping the text-editor. You can also combine this to \texttt{git commit -a -m "Some text"}.
+	\item[\texttt{git push}] This will push all your commits to the server. Until this command, only your local copy has been modified. After this command, your changes are online and for everyone to see. You will be asked to enter your username and password. You want see any stars as usual when entering your password. Don't wonder, your password is still entered. There are no stars shown to make it harder for others to see your password-length when they \textit{accidently} pass by your desktop. Just keep typing.
+\end{description}
+
+A normal \git -session will look like this:\\
+\begin{enumerate}
+	\item \texttt{git pull} See what the others did while you were away.
+	\item Do some work.
+	\item \texttt{git add -A} Add all your changes to the next commit. Alternatively add only special files.
+	\item \texttt{git commit} Enter a message describing what you did.
+	\item \texttt{git push} Enter your Username and Password.
+\end{enumerate}
+You see, it's simple enough.
+
+\todo[inline]{Add a "What to do when something goes wrong?"-Section}
+
+\end{document}
