@@ -6,7 +6,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 
 \title{How to use Git and GitHub}
-\title{J-F-B-M/Larethian}
+\author{J-F-B-M \footnote{alias Larethian}}
 \date{\today}
 
 \newcommand{\git}{\textbf{GIT}}
@@ -16,22 +16,31 @@
 
 \begin{document}
 \maketitle
+\tableofcontents
+
+\begin{abstract}
+	This Document is directed towards everyone who just started with \git . It will explain you how to get a repository to your computer, and how to get your changes back to the server.
+\end{abstract}
+
+\newpage
 
 \section{Introduction}
 
 So you found our project and thought about the possibility to dive into it, but soon you noticed that there is this \git. In this paper, I want to introduce you to \git, showing you how and why to use it.
 
-\section{What is GIT?}
+\section{What is \git ?}
 
 \git is a distributed version control system. Don't worry, that simply means that multiple persons can work at the same documents either at the same or at different times without breaking everything for each other. To effectively collaborate in this project, you \textbf{HAVE} to install \git and get a \github -Account. You can do everything via \github's Web-interface, but doing so is tedious and unproductive.\\
 To install \git, visit the \href{http://git-scm.com/}{\git -Homepage}. There is also a good explanation about the \href{http://git-scm.com/book/en/v2/Getting-Started-Git-Basics}{Git Basics}.\\
 \git is organised in repositories. One repository can not look into another\footnote{That is not true. But we limit our view to this to get you started in the wonderful world of \git.}. Think of it as different folders. You can clone, pull and push repositories, but more on that later.
 
-\section{What is GitHub?}
+\section{What is \github ?}
 
 \github is a free hosting service for repositories. It provides us with many tools that come quite in handy for our goals, so that's why we use it. And because it's free.
 
-\section{How to use GIT and GitHub?}
+\newpage
+
+\section{How to use \git and \github ?}
 
 First, you have to get a \github -Account. Once you have this, tell your name to us in \href{\chatlink}{our Chat}, and we will add you to our organization as soon as possible.\\
 Then you have to install \git . \git is in itself a program like every other program, but you can't use it directly. You either have to use another program which gives you a GUI, or use a command-line. As this document can't cover every possible GUI, I will just show you the command-line commands.
@@ -55,6 +64,24 @@ A normal \git -session will look like this:\\
 \end{enumerate}
 You see, it's simple enough.
 
-\todo[inline]{Add a "What to do when something goes wrong?"-Section}
+\newpage
+
+\section{What to do when everything goes wrong?}
+
+There are many things that can go wrong with \git . I work with \git for nearly 4 years now and even I make a lot of mistakes. Luckily \git is very friendly and lets you undo a lot. To really screw up, you have to enter so many wrong commands that you should already be worried by then or you want to harm the project, which I happily believe you don't want.
+
+\subsection{I accidentally added a file to the index!}
+	Sometimes you added a file to the data that should be committed, and realized afterwards that you don't want it in this commit.
+\\	To undo this, simply do
+\\	\texttt{git reset HEAD <File>}  
+\\	where \texttt{<File>} is the file you don't want to commit.
+\\
+\\	If \texttt{<File>} is in a subdirectory (not in the same folder your commandline is in), you need to give the path from your current directory to the directory containing the file. A linux-commandline could look like this:
+\\	\texttt{user@computer ~/Documents/MyWorld \$ git reset HEAD ./path/to/file.txt}  
+\\	This will reset only the file at \texttt{~/Documents/MyWorld/path/to/file.txt}, but would leave anything else untouched.  
+\\
+\\	To reset every file you can use the following:  
+\\	\texttt{git reset HEAD .}  
+\\	This will reset all files in the same directory and all subdirectories. You might need to navigate around using \texttt{cd <path>} to get to the right directory.
 
 \end{document}
