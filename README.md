@@ -1,6 +1,6 @@
 Tutorials
 =========
 
-In here are all important tutorials to work in this organization.
+In here are all important tutorials to work in this organization. You should start by reading the [Starting Instructions](https://github.com/Worldbuilding-Workshop/Information-and-Tutorials/blob/master/Starting-Instructions.md).
 
-Simply look in the directory you're interested in and open the PDF.
+To be added as a contributor, simply drop into [this StackExchange chatroom](http://chat.stackexchange.com/rooms/17796/worldbuilding-workshop) and ask to be added as a contributor.
