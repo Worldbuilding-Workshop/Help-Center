@@ -1,11 +1,11 @@
-## Welcome to CSW.
+Information and Tutorials
+=========================
 
-Collaborative Shared Worlds is a project [born](http://meta.worldbuilding.stackexchange.com/q/341/2685) on [Worldbuilding Stack Exchange](http://worldbuilding.stackexchange.com/). We aim to create free (both as in 'free beer' and as in 'free speech') fictional settings for anyone to use, not matter what their purpose.
+There are a few steps you need to take before contributing to the Workshop project.
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are free to use and build on this material for any purpose (including commercial purposes) as long as you attribute this project. You are *also* free to copyright or otherwise license *your* work, as long as the work you use from here remains uncopyrighted and unsublicensed. See the [license legalese](http://creativecommons.org/licenses/by/4.0/legalcode) for complete details, noting especially sections 1a and 2a5B.
+1. Read the [Starting Instructions](https://github.com/Worldbuilding-Workshop/Information-and-Tutorials/blob/master/Starting-Instructions.md). These outline some basic guidelines and rules for working with the Workshop team.
+2. Get [GitHub for Windows](https://windows.github.com/) (if you're on Windows) or follow the [GitHub instructions for setting up Git](https://help.github.com/articles/set-up-git/#platform-all).
+2a. (optional) Learn how to use Git, if you're using Git not GitHub for Windows. You can read our own [tutorial](https://github.com/Worldbuilding-Workshop/Information-and-Tutorials/blob/master/How%20to%20use%20Git/How%20to%20use%20Git.pdf) on this subject for a quick masterclass.
 
-## Joining In
 
-If you want to help us out, we'd love to have you. Drop into [this Stack Exchange chatroom](http://chat.stackexchange.com/rooms/17796/collaborative-shared-worlds) and ask to be added as a contributor. Anyone involved can add new contributors so it won't matter who you ask.
-
-Once you have access, please take some time to familiarise yourself with the structures and conventions we use across our projects. To keep things easy for all our contributors, please stick to these as much as possible.
+3. You are now ready to start contributing. Pick a project to contribute to. In the relevant repository, the README.md file should show you the ground rules and project co-ordinator: follow the rules, and contact the co-ordinator to gain edit access to the repository.
