@@ -28,3 +28,6 @@ The Help-Center repository may have something applicable to your problem - check
 - The mods or co-ordinators: use the Help-Center issue tracker.
 
 ## Enjoy contributing!
+
+## 4. Want to use our work?
+Go ahead - all our projects are free both in monetary and usage terms. Content is licensed under [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) - you must attribute the content you use back to this project. There is a license document in the root of every project's repository.
